@@ -1,0 +1,18 @@
+<div class="row">
+  <app-search #searchComponent></app-search>
+</div>
+<div class="row container">
+  <div class="column">
+    <div class="title">
+      Related Devices
+    </div>
+    <app-device-list-item [mode]="'short'"
+                          class="item"
+                          *ngFor="let device of devices$ | async"
+                          [device]="device">
+    </app-device-list-item>
+  </div>
+  <div class="column">
+    <app-chart [deviceId]="id"></app-chart>
+  </div>
+</div>

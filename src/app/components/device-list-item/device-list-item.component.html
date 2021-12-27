@@ -1,0 +1,10 @@
+<div class="device-row">
+  <div class="device-icon">
+    <fa-icon [icon]="type[device.type]" size="2x"></fa-icon>
+  </div>
+  <div class="device-text">
+    <div>{{device.title}}</div>
+    <div class="subtitle">Status: {{device.status}}</div>
+  </div>
+  <a *ngIf="mode === 'full'" routerLink="/detail/{{device.id}}"><fa-icon [icon]="faInfo" size="2x"></fa-icon></a>
+</div>

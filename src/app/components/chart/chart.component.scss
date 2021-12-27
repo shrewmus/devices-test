@@ -1,0 +1,21 @@
+$borderColor: #d7d5d5;
+
+.chart-container {
+  border-radius: 5px;
+  border: 1px solid $borderColor;
+
+  .chart-title {
+    height: 30px;
+    font-size: 24px;
+    background-color: lightblue;
+    padding: 20px 10px;
+  }
+
+  .chart {
+    padding: 5px;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}

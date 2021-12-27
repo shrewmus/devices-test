@@ -1,0 +1,8 @@
+<div class="srch-field">
+  <fa-icon [icon]="faSearch"></fa-icon>
+  <input type="text"
+         placeholder="Search"
+         [(ngModel)]="searchText"
+         (ngModelChange)="filterDevices($event)">
+</div>
+<a (click)="reset()" class="btn btn-link">Cancel</a>

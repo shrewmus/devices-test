@@ -1,0 +1,6 @@
+<div class="row">
+  <app-search #searchComponent></app-search>
+</div>
+<div class="row">
+  <app-device-list-item [device]="device" *ngFor="let device of searchComponent.filteredData$ | async"></app-device-list-item>
+</div>

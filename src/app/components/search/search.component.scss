@@ -1,0 +1,40 @@
+:host {
+  padding: 20px;
+  display: flex;
+  background-color: lightblue;
+  margin-bottom: 15px;
+}
+
+$fontSize: 20px;
+
+.srch-field {
+  width: 90%;
+
+  fa-icon {
+    color: gray;
+    margin-right: -20px;
+    z-index: 100;
+    position: relative;
+  }
+  input {
+    box-sizing: border-box;
+    padding: 2px 2px 2px 22px;
+    border: none;
+    height: 28px;
+    font-size: $fontSize;
+    border-radius: 2px;
+    width: 100%;
+  }
+}
+
+.btn {
+  margin: 2px 4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-link {
+  font-size: $fontSize;
+  color: dodgerblue;
+}
